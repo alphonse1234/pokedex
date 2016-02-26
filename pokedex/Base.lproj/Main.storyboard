@@ -178,15 +178,23 @@
                                             <constraint firstAttribute="height" constant="38" id="jf9-Db-pq9"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR7-gf-ozl">
-                                        <rect key="frame" x="25" y="26" width="34" height="30"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR7-gf-ozl">
+                                        <rect key="frame" x="14" y="32" width="32" height="20"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Bh3-R3-TBp"/>
                                             <constraint firstAttribute="height" constant="30" id="DHM-3a-kFl"/>
                                             <constraint firstAttribute="width" constant="34" id="NOK-o5-BsY"/>
+                                            <constraint firstAttribute="width" constant="32" id="lNN-xT-rDC"/>
                                         </constraints>
-                                        <state key="normal" title="Back">
+                                        <state key="normal" title="Back" image="back">
                                             <color key="titleColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DHM-3a-kFl"/>
+                                                <exclude reference="NOK-o5-BsY"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="backBtnPressed:" destination="B1g-e4-FEk" eventType="touchUpInside" id="pLZ-Lp-Hhl"/>
                                         </connections>
@@ -197,13 +205,19 @@
                                     <constraint firstAttribute="height" constant="60" id="ACe-SW-Eoc"/>
                                     <constraint firstAttribute="bottom" secondItem="wR7-gf-ozl" secondAttribute="bottom" constant="4" id="HEG-XG-4gI"/>
                                     <constraint firstItem="wR7-gf-ozl" firstAttribute="leading" secondItem="Mu3-op-lfX" secondAttribute="leading" constant="25" id="M08-9Q-rHu"/>
+                                    <constraint firstAttribute="bottom" secondItem="wR7-gf-ozl" secondAttribute="bottom" constant="8" id="NNQ-9C-ehY"/>
                                     <constraint firstItem="zN3-zH-Myg" firstAttribute="centerX" secondItem="Mu3-op-lfX" secondAttribute="centerX" id="RLM-Ql-ntq"/>
+                                    <constraint firstItem="wR7-gf-ozl" firstAttribute="top" secondItem="Mu3-op-lfX" secondAttribute="top" constant="32" id="cb4-qK-94k"/>
                                     <constraint firstItem="wR7-gf-ozl" firstAttribute="top" secondItem="Mu3-op-lfX" secondAttribute="top" constant="26" id="e8p-ut-vtI"/>
+                                    <constraint firstItem="wR7-gf-ozl" firstAttribute="leading" secondItem="Mu3-op-lfX" secondAttribute="leading" constant="14" id="mlX-l4-SfD"/>
                                     <constraint firstAttribute="bottom" secondItem="zN3-zH-Myg" secondAttribute="bottom" id="ruL-Y2-2Fo"/>
                                     <constraint firstAttribute="bottom" secondItem="zN3-zH-Myg" secondAttribute="bottom" constant="8" id="xcl-rh-tGW"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="HEG-XG-4gI"/>
+                                        <exclude reference="M08-9Q-rHu"/>
+                                        <exclude reference="e8p-ut-vtI"/>
                                         <exclude reference="xcl-rh-tGW"/>
                                     </mask>
                                 </variation>
@@ -484,6 +498,7 @@
     <resources>
         <image name="5" width="320" height="320"/>
         <image name="6" width="320" height="320"/>
+        <image name="back" width="100" height="67"/>
         <image name="logo" width="285" height="110"/>
     </resources>
 </document>
