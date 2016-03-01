@@ -3,7 +3,7 @@
 //  pokedex
 //
 //  Created by 장창순 on 2016. 2. 24..
-//  Copyright © 2016년 Swiftbook. All rights reserved.
+//  Copyright © 2016년 All rights reserved.
 //
 
 import Foundation
@@ -98,7 +98,6 @@ class Pokemon {
                     
                     if let name = types[0]["name"] {
                         self._type = name
-                         completed()
                     }
                     if types.count > 1 {
                         for var x = 1; x < types.count; x++ {

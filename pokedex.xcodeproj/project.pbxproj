@@ -394,7 +394,7 @@
 				INFOPLIST_FILE = pokedex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftbook.pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.changsoon.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -407,7 +407,7 @@
 				INFOPLIST_FILE = pokedex/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftbook.pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.changsoon.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
